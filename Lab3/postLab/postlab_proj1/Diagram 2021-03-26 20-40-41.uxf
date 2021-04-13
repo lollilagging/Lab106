@@ -1,0 +1,13 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>270</y><w>210</w><h>200</h></coordinates><panel_attributes>Student
+--
+-name : str
+-score : int
+--
++__str__() : str
++__eq__() : bool
++__ge __() : bool
++__lt__() : str
++setScore() : int
++getName() : str
++getScores() : int
++getAverage(): int</panel_attributes><additional_attributes></additional_attributes></element></diagram>

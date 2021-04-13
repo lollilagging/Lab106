@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>420</y>
+      <w>300</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>SavingsAccount
+--
+- name : string
+- pin : intiger
+- balance : float
+--
++ SavingsAccount(string, int, float = 0)
++ __str__() : string
++ getBalance() : float
++ getName() : string
++ getPin() : intiger
++ deposit(float) : void
++ withdraw(amount) : string
++ computeInterest() : float
++ __lt__(other) : bool
++ __gt__(other) : bool
++ __eq__(other) : bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>170</y>
+      <w>300</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Bank
+--
+- accounts : SavingsAccount{ }
+--
+- Bank(fileName = none) : void
+- __str__() : string
+- makeKey(string, integer) : string
+- add(SavingsAccount) : void
+- remove(string, integer) : SavingsAccouint
+- get(string, integer) : string
+- computeInterest() : float
+- getKeys : list
+- save(fileName = None) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>190</x>
+      <y>360</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+*</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
